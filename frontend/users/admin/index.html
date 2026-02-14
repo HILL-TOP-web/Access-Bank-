@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+
+<div id="navbar"></div>
+
+<section class="container">
+    <h2>Admin Dashboard</h2>
+
+    <div class="card">
+        <h3>Total Users</h3>
+        <p id="totalUsers">Loading...</p>
+    </div>
+
+    <div class="card">
+        <h3>Total Transactions</h3>
+        <p id="totalTransactions">Loading...</p>
+    </div>
+</section>
+
+<script src="../scripts/api.js"></script>
+<script>
+    loadNavbar();
+    fetchAdminStats();
+</script>
+
+</body>
+  </html>
