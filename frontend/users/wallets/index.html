@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wallet Dashboard</title>
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+
+<div id="navbar"></div>
+
+<section class="container">
+    <h2>My Wallet</h2>
+
+    <div class="card">
+        <h3>Balance</h3>
+        <p id="walletBalance">Loading...</p>
+    </div>
+
+    <div class="actions">
+        <button onclick="openDeposit()">Deposit</button>
+        <button onclick="openTransfer()">Transfer</button>
+    </div>
+</section>
+
+<div id="modal-container"></div>
+
+<script src="../scripts/api.js"></script>
+<script>
+    loadNavbar();
+    loadModal();
+    fetchWallet();
+</script>
+
+</body>
+  </html>
