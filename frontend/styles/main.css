@@ -1,0 +1,153 @@
+/* ============================= */
+/* RESET */
+/* ============================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ============================= */
+/* ROOT VARIABLES */
+/* ============================= */
+
+:root {
+    --primary: #000000;
+    --secondary: #111111;
+    --accent: #00ffcc;
+    --danger: #ff3b3b;
+    --success: #00c853;
+    --text-light: #ffffff;
+    --text-muted: #aaaaaa;
+}
+
+/* ============================= */
+/* BODY */
+/* ============================= */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--primary);
+    color: var(--text-light);
+    min-height: 100vh;
+}
+
+/* ============================= */
+/* CONTAINER */
+/* ============================= */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+/* ============================= */
+/* BUTTONS */
+/* ============================= */
+
+.btn {
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--accent);
+    color: #000;
+}
+
+.btn-primary:hover {
+    opacity: 0.8;
+}
+
+.btn-danger {
+    background-color: var(--danger);
+    color: #fff;
+}
+
+.btn-success {
+    background-color: var(--success);
+    color: #fff;
+}
+
+/* ============================= */
+/* INPUTS */
+/* ============================= */
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: 1px solid #333;
+    background-color: var(--secondary);
+    color: var(--text-light);
+}
+
+/* ============================= */
+/* CARD */
+/* ============================= */
+
+.card {
+    background-color: var(--secondary);
+    padding: 20px;
+    border-radius: 8px;
+    margin: 15px 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+/* ============================= */
+/* NAVBAR */
+/* ============================= */
+
+.navbar {
+    background: var(--secondary);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    color: var(--text-light);
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+/* ============================= */
+/* FLEX UTILITIES */
+/* ============================= */
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
