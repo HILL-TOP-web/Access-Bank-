@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SkyWallet Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">
+            <img src="assets/logo.png" alt="Logo">
+            <h2>$SKD Wallet</h2>
+        </div>
+        <button onclick="logout()">Logout</button>
+    </div>
+
+    <div class="container">
+
+        <div class="balance-card">
+            <h3>Available Balance</h3>
+            <h1 id="balance">₦0.00</h1>
+            <button onclick="refreshBalance()">Refresh</button>
+        </div>
+
+        <div class="withdraw-card">
+            <h3>Withdraw to Bank (via Paystack)</h3>
+
+            <input type="number" id="amount" placeholder="Amount (NGN)">
+            <input type="text" id="accountNumber" placeholder="Account Number">
+            <input type="text" id="bankCode" placeholder="Bank Code">
+
+            <button onclick="withdraw()">Withdraw</button>
+
+            <p id="message"></p>
+        </div>
+
+    </div>
+
+<script src="js/dashboard.js"></script>
+</body>
+</html>
